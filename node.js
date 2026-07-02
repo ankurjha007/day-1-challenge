@@ -14,7 +14,7 @@ let currentSearch = "";
 
 
 async function getMovies() {
-    if (currentSearch=="")return
+    if (currentSearch=="")return;
 
     let response = await fetch(
         `https://www.omdbapi.com/?apikey=${API_KEY}&s=${currentSearch}&page=${currentPage}`
